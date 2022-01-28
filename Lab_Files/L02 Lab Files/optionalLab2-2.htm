@@ -7,8 +7,8 @@
 
 <body>
 <script language="JavaScript" type="text/javascript">
-// Calculates the payments and updates for fields to
-// display the result
+
+
 function calcpayment() {
    var amt = document.frm.amt.value;
    var ir = document.frm.ir.value / 1200;
@@ -20,7 +20,7 @@ function calcpayment() {
    }
    mp = amt * ir / ( 1 - (1/total));
 
-  // Use Math object to chop all numbers after 2 digits
+
   document.frm.payment.value = Math.round(mp*100)/100;
   document.frm.total.value = Math.round(mp * term *100)/100 ;
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var triangle = '#';
+        while (triangle.length < 8) {
+            console.log(triangle);
+            triangle = triangle + '#'
+        }
+
+        for (num = 1; num <= 100; num++) {
+            if (num === 101) {
+                break;
+            }
+            if (!(num % 3) && !(num % 5)) {
+                console.log("Art3mis & Parzival");
+            }
+            else if (!(num % 5)) {
+                console.log("Parzival");
+            }
+            else if (!(num % 3)) {
+                console.log("Art3mis");
+            }
+            else {
+                console.log(num);
+            }
+        }
+
+    var size = 8;
+    var block = "#"
+    var space = " "
+
+    for (var num = 1; num <= size; num++){
+        var line = ''
+
+        for (var h = 1; h <= size; h++) {
+            if (num % 2) {
+                if (h % 2) {
+                    line = line + space;
+                } else {
+                    line = line + block;
+                }
+            } else {
+                if (h % 2) {
+                    line = line + block;
+                } else {
+                    line = line + space;
+                }
+            }
+        }
+        
+        console.log(line);
+    }
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

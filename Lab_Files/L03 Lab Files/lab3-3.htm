@@ -5,7 +5,6 @@
 <title>Lab 3-3</title>
 
 <script type="text/javascript">
-<!--
 
 var numCorrect = 0;
 
@@ -15,12 +14,15 @@ var points = 0;
 
 var q1 = "What company developed Javascript?";
 var a1 = "NETSCAPE";
+//returned 1
 
 var q2 = "Using Javascript operator precedence,\n what is the result of the following expression? 2 + 4 * 6";
 var a2 = 26;
+//returned 2
 
 var q3 = "With what object-oriented programming language\n is Javascript often compared and confused?";
 var a3 = "JAVA";
+//returned 'you answered all 3 correctly'
 
 response = prompt(q1,"");
 if (response) points = runningTotal((response.toUpperCase() == a1) ? 1 : 0);
@@ -43,7 +45,6 @@ function runningTotal(i) {
   return numCorrect;
 }
 
-// -->
 </script>
 
 </head>

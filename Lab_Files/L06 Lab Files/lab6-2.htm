@@ -5,7 +5,6 @@
 <title>Lab 6-2</title>
 
 <script type="text/Javascript">
-<!--
 
 /******************************************************
 
@@ -24,14 +23,14 @@ event handler to call the window.close() method.
   
 function smallWindow() {
 
-  
-  
-  
+  var myWindow = open("", "untitled window", 'height=100, width=100');
+  myWindow.document.open();
+  myWindow.document.write('<form><input type="button" onClick="window.close();" value="Close"></input></form>');
+  myWindow.document.close()
   
 }
 
 
-//-->
 </script>
 
 </head>

@@ -5,7 +5,6 @@
 <title>Lab 7-8</title>
 
 <script type="text/javascript">
-<!--
 
   function runClock() {
   var timeNow = new Date();
@@ -27,16 +26,15 @@
   setTimeout("runClock()",1000);
   }
 
-//-->
 </script>
 </head>
 <body onload="runClock();">
 <h3>CIW JavaScript Specialist</h3>
 <hr />
 
-
+<form name="clockForm">
 <h4>Time Watcher</h4>
-
+The time is: <input type="text" name="clockBox" size="15" onfocus="blur();" />
 
 </body>
 </html>
